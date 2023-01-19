@@ -2,5 +2,75 @@
 <html>
     <head>
         <title>Rustify</title>
+
+        <link rel="icon" href="res/icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans|Inconsolata">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>
+            hljs.highlightAll()
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Need some rusty codes in a hurry? Well then, you're in the right place, buddy.">
+        <meta name="author" content="GlennFolker">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
+    <body>
+        <div class="page">
+            <div class="title">
+                <span class="icon">
+                    <img src="res/icon.png">
+                </span>
+                <span class="name">
+                    <h3>RUSTIFY</h3>
+                </span>
+                <span class="slogan">
+                    <p>Need some rusty codes in a hurry? Well, you're in the right place, buddy.</p>
+                </span>
+            </div>
+
+            <div class="rust-icon">
+                <img src="res/rust-icon.png">
+            </div>
+
+            <div class="content">
+                <!-- These look *really* ugly, but I have no idea how to deal with leading and trailing whitespaces. -->
+                <div class="hi">
+                    <div class="source"><pre>
+<code class="language-rust">// `main.rs`
+fn main() {
+    println!("Hi!");
+}</code></pre>
+                    </div>
+
+                    <div class="compile"><pre>
+<code class="language-shell">$ rustc main.rs
+$ ./main
+Hi!</code></pre>
+                    </div>
+                </div>
+
+                <div class="dialog">
+                    <h1>“Why is Rust so hard?”</h1>
+                    <p>
+                        Have you ever like, found yourself in a situation where you just can’t figure out how to program something in <a href="https://www.rust-lang.org/">Rust</a>? It’s a horrible situation, I know. Especially with those shackling (yet good) <a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html">aliasing rules</a>, <a href="https://rust-lang.github.io/chalk/book/clauses/coherence.html#the-orphan-rules">orphan rules</a>, and so on. They are absolute headaches sometimes, but here’s the good news: you can <a href="https://doc.rust-lang.org/std/keyword.move.html"><code>move</code></a> all of those to me!
+                    </p>
+
+                    <h1>“What, really?”</h1>
+                    <p>
+                        Yes, really! Well, for a fair amount of price of course. What, you thought I was a communist or something? Please <a href="https://doc.rust-lang.org/std/process/fn.exit.html"><code>process::exit(1)</code></a> yourself if so.
+                    </p>
+
+                    <h1>“No, of course I’m willing to pay.”</h1>
+                    <p>
+                        Good, good. Then head over to this <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">redirection</a>, so we can talk more about the business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

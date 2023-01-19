@@ -1,0 +1,104 @@
+body {
+    background-color: #fdfdff;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Sans", sans-serif;
+    color: #343445;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 2.8em;
+}
+
+h3 {
+    font-size: 1.27em;
+    line-height: 1.77em;
+}
+
+code, .hjls {
+    font-family: "Inconsolata", monospace;
+    color: #383a42;
+    background: #eaeaed;
+}
+
+/* Page container. */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    margin-bottom: 128px;
+}
+
+/* Page title. */
+.page>.title {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    align-items: center;
+}
+
+.page>.title>* {
+    display: flex;
+    padding: 8px;
+}
+
+.page>.title>.icon>img {
+    width: 72px;
+    height: 72px;
+}
+
+/* Rust icon. */
+.page>.rust-icon {
+    display: flex;
+    flex-direction: row;
+    padding-top: 96px;
+    align-items: center;
+}
+
+.page>.rust-icon>img {
+    width: 100%;
+    height: 256px;
+    object-fit: contain;
+}
+
+/* Page content. */
+.page>.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    width: 50%;
+    min-width: 420px;
+}
+
+/* "Hi!" Rust program. */
+.page>.content>.hi>* {
+    display: flex;
+    padding: 8px;
+}
+
+.page>.content>.hi>*>pre {
+    display: inline;
+    width: 100%;
+}
+
+.page>.content>.hi>*>pre>code {
+    padding: 1.28em;
+    font-size: 1.28em;
+}
